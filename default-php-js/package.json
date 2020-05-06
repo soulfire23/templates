@@ -16,16 +16,26 @@
   "author": "promofast.ru",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
     "babel-cli": "*",
     "babel-core": "*",
     "babel-eslint": "*",
     "babel-preset-env": "*",
-    "babel-preset-stage-0": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-import": "*",
     "gulp": "*",
-    "gulp-imagemin": "*"
+    "gulp-babel": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "sass": "*",
+    "sass-loader": "*",
   },
   "dependencies": {}
 }

@@ -9,3 +9,9 @@ lint:
 
 imagemin:
 	gulp imagemin
+
+sass:
+	gulp sass
+
+babel:
+	gulp babel
