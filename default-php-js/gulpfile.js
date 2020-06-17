@@ -7,6 +7,7 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
+const webpack = require('webpack-stream');
 sass.compiler = require('node-sass');
 
 // Imagemin
@@ -45,6 +46,9 @@ gulp.task('sass:watch', () => {
 // Babel
 gulp.task('babel', (done) => {
   gulp.src('src/js/script.js')
+    .pipe(webpack({
+      // Any configuration options...
+    }))
     .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ['@babel/env'],
